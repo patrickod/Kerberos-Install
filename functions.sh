@@ -1,4 +1,4 @@
-# Functions for krb_install.sh
+# Functions for krb_installsh
 
 check_root()
 {
@@ -7,4 +7,10 @@ check_root()
     echo "must be root!"
     exit 87
   fi
+}
+
+make_work_directory()
+{
+  mkdir /tmp/krb_install
+  cd /tmp/krb_install
 }
